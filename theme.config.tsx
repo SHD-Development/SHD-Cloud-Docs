@@ -12,7 +12,7 @@ const config: DocsThemeConfig = {
 	docsRepositoryBase: "https://github.com/SHD-Development",
 	useNextSeoProps() {
 		return {
-			titleTemplate: "%t – SHD Cloud",
+			titleTemplate: "%s – SHD Cloud",
 		};
 	},
 	/*banner: {
@@ -25,15 +25,6 @@ const config: DocsThemeConfig = {
 	},*/
 	search: {
 		placeholder: "在此搜尋...",
-	},
-	themeSwitch: {
-		useOptions() {
-			return {
-				light: "淺色主題",
-				dark: "深色主題",
-				system: "系統",
-			};
-		},
 	},
 	footer: {
 		text: "SHD Cloud 文檔",
