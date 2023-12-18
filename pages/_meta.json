@@ -1,0 +1,17 @@
+{
+  "index": "主頁",
+  "quickstart": "快速開始",
+  "dashboard": "資源頁面",
+  "panel": "控制面板",
+  "docs": "文檔共編",
+  "about": {
+    "title": "關於我們",
+    "type": "page"
+  },
+  "contact": {
+    "title": "聯絡我們 ↗",
+    "type": "page",
+    "href": "https://discord.gg/shd-cloud-wang-meng-yun-1120284154957930588",
+    "newWindow": true
+  }
+}
