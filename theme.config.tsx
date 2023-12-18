@@ -4,12 +4,12 @@ import { DocsThemeConfig } from "nextra-theme-docs";
 const config: DocsThemeConfig = {
 	logo: <span>SHD Cloud 文檔</span>,
 	project: {
-		link: "https://github.com/SHD-Development",
+		link: "https://github.com/SHD-Development/SHD-Cloud-Docs",
 	},
 	chat: {
 		link: "https://discord.gg/shd-cloud-wang-meng-yun-1120284154957930588",
 	},
-	docsRepositoryBase: "https://github.com/SHD-Development",
+	docsRepositoryBase: "https://github.com/SHD-Development/SHD-Cloud-Docs",
 	useNextSeoProps() {
 		return {
 			titleTemplate: "%s – SHD Cloud",
