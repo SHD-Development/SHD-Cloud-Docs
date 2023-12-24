@@ -7,12 +7,13 @@
   },
   "dashboard": "資源頁面",
   "panel": "控制面板",
-  "-- Other": {
+  "-- Rules": {
     "type": "separator",
-    "title": "其他"
+    "title": "規章"
   },
   "tos": "服務條款",
   "privacy": "隱私權政策",
+  "community": "社群規則",
   "about": {
     "title": "關於我們",
     "type": "page"
