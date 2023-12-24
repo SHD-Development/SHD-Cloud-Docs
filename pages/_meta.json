@@ -13,9 +13,12 @@
   },
   "tos": "服務條款",
   "privacy": "隱私權政策",
-  "docs": "文檔共編",
   "about": {
     "title": "關於我們",
+    "type": "page"
+  },
+  "docs": {
+    "title": "文檔共編",
     "type": "page"
   },
   "contact": {
