@@ -1,3 +1,4 @@
+import { useRouter } from "next/router";
 import React from "react";
 import { DocsThemeConfig } from "nextra-theme-docs";
 
@@ -7,10 +8,16 @@ const config: DocsThemeConfig = {
 		link: "https://github.com/SHD-Development/SHD-Cloud-Docs",
 	},
 	chat: {
-		link: "https://discord.gg/shd-cloud-wang-meng-yun-1120284154957930588",
+		link: "https://dc.shdcloud.xyz",
 	},
-	docsRepositoryBase: "https://github.com/SHD-Development/SHD-Cloud-Docs",
+	docsRepositoryBase:
+		"https://github.com/SHD-Development/SHD-Cloud-Docs/tree/main",
 	useNextSeoProps() {
+		const { asPath } = useRouter();
+		if (asPath == "/")
+			return {
+				titleTemplate: "SHD Cloud 文檔",
+			};
 		return {
 			titleTemplate: "%s – SHD Cloud",
 		};
@@ -28,6 +35,28 @@ const config: DocsThemeConfig = {
 	},
 	footer: {
 		text: "SHD Cloud 文檔",
+	},
+	toc: {
+		title: "目錄",
+		backToTop: true,
+	},
+	feedback: {
+		content: "於 GitHub 提出問題 →",
+	},
+	editLink: {
+		text: "編輯此頁面",
+	},
+	themeSwitch: {
+		useOptions() {
+			return {
+				light: "淺色",
+				dark: "深色",
+				system: "系統",
+			};
+		},
+	},
+	gitTimestamp: ({ timestamp }) => {
+		return <>上次更新於 {timestamp.toLocaleDateString()}</>;
 	},
 };
 

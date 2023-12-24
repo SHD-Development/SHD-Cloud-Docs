@@ -1,8 +1,18 @@
 {
   "index": "主頁",
   "quickstart": "快速開始",
+  "-- General": {
+    "type": "separator",
+    "title": "一般"
+  },
   "dashboard": "資源頁面",
   "panel": "控制面板",
+  "-- Other": {
+    "type": "separator",
+    "title": "其他"
+  },
+  "tos": "服務條款",
+  "pp": "隱私權政策",
   "docs": "文檔共編",
   "about": {
     "title": "關於我們",
