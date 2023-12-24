@@ -26,6 +26,7 @@
   },
   "devDependencies": {
     "@types/node": "18.11.10",
+    "prettier": "latest",
     "typescript": "^4.9.3"
   }
 }
