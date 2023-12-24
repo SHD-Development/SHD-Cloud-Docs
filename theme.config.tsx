@@ -41,10 +41,10 @@ const config: DocsThemeConfig = {
 		backToTop: true,
 	},
 	feedback: {
-		content: "於 GitHub 提出問題 →",
+		content: "於 GitHub 提出建議 →",
 	},
 	editLink: {
-		text: "編輯此頁面",
+		text: "於 GitHub 編輯頁面 →",
 	},
 	themeSwitch: {
 		useOptions() {
