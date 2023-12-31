@@ -14,6 +14,11 @@
   "tos": "服務條款",
   "privacy": "隱私權政策",
   "community": "社群規則",
+  "-- Others": {
+    "type": "separator",
+    "title": "其他"
+  },
+  "acknowledgements": "致謝",
   "about": {
     "title": "關於我們",
     "type": "page"
