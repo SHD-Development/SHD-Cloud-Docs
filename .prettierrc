@@ -1,0 +1,15 @@
+{
+  "semi": false,
+  "singleQuote": true,
+  "trailingComma": "none",
+  "arrowParens": "avoid",
+  "overrides": [
+    {
+      "files": "*.mdx",
+      "options": {
+        "semi": true,
+        "singleQuote": false
+      }
+    }
+  ]
+}

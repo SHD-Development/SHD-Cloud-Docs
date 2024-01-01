@@ -4,6 +4,7 @@
   "description": "Nextra docs template",
   "scripts": {
     "dev": "next dev",
+    "format": "prettier --cache --check --ignore-path .gitignore --ignore-path .prettierignore . --write",
     "build": "next build",
     "start": "next start"
   },
