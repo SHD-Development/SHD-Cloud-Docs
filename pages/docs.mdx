@@ -9,14 +9,19 @@ import { FileTree, Steps, Callout } from "nextra/components";
 
 <Steps>
 ### 先叉
+
 <Callout type="info">請先登入 [GitHub](https://github.com/)</Callout>
+
 1. 我們需要學習叉子博士的精神，到我們的 [文檔 GitHub](https://github.com/SHD-Development/SHD-Cloud-Docs) Fork。
+
 ![按下 Fork 按鈕](/docs/fork.png)
 
 2. 您可以將 Repository name 改成您喜歡的名稱，然後按下 Create Fork。
+
    ![按下 Create Fork 按鈕](/docs/create_fork.png)
 
 3. 如果您看到這個畫面，代表您 Fork 成功啦！
+
    ![Fork 成功](/docs/forked.png)
 
 ---
@@ -35,7 +40,12 @@ import { FileTree, Steps, Callout } from "nextra/components";
 git clone <GitHub 倉庫網址>
 ```
 
+<Callout type="warning">
+  每次編輯前請在您的 GitHub 倉庫上 Sync Fork，並且執行 git pull。
+</Callout>
+
 您要把 `<GitHub 倉庫網址>` 替換成您的倉庫網址，大概長這樣：`https://github.com/GodwhiteTaiwan/SHD-Cloud-Docs`（絕對不會跟我一樣）
+
 ![Clone 倉庫](/docs/clone.png)
 
 2. 這樣就好了
@@ -47,16 +57,42 @@ git clone <GitHub 倉庫網址>
 <Callout type="info">
   請先安裝 [Node.js](https://nodejs.org/en)，建議選擇 LTS 版本。
 </Callout>
-1. 找到您的檔案位置。 2. 先安裝必要套件包 ```sh copy npm install ``` 3. 安裝完畢後，您可以執行指令
-```sh copy npm run dev ``` 4. 然後您就會看到這個畫面。 ![dev](/docs/dev.png) 5. 您可以到
-http://127.0.0.1:3000/ 即時查看您寫的內容。
+
+1. 找到您的檔案位置。
+
+2. 先安裝必要套件包
+
+```sh copy
+npm install
+```
+
+3. 安裝完畢後，您可以執行指令
+
+```sh copy
+npm run dev
+```
+
+4. 然後您就會看到這個畫面。
+
+![dev](/docs/dev.png)
+
+5. 您可以到
+   http://127.0.0.1:3000/ 即時查看您寫的內容。
+
 <Callout type="warning">請務必檢查自己寫的內容是否可正常顯示！</Callout>
---- ### 編輯語法
+
+---
+
+### 編輯語法
+
 <Callout type="warning">
   請熟讀[中文排版指北](https://github.com/sparanoid/chinese-copywriting-guidelines/blob/master/README.md)，並依照此文章的排版模式。
 </Callout>
+
 1. 我們採用 [Nextra](https://nextra.site/)，請依照 MDX 語法撰寫，請熟閱 [Nextra 文檔](https://nextra.site/docs)。
+
 2. 檔案架構如下
+
 <FileTree>
   <FileTree.Folder name="pages" defaultOpen>
     <FileTree.File name="_meta.json" />
@@ -72,8 +108,14 @@ http://127.0.0.1:3000/ 即時查看您寫的內容。
     </FileTree.Folder>
   </FileTree.Folder>
 </FileTree>
+
 - `pages` 資料夾為儲存 MDX 檔案的位置，`_meta.json`內有檔案名稱對應的標題，您可以參考[這篇文章](https://nextra.site/docs/docs-theme/page-configuration)
-- `public` 資料夾為儲存影音檔案的位置，若您有圖片，請置入此資料夾。 --- ### 上傳檔案
+- `public` 資料夾為儲存影音檔案的位置，若您有圖片，請置入此資料夾。
+
+---
+
+### 上傳檔案
+
 在您編輯並檢查後，請上傳檔案至您的 GitHub 倉庫。
 
 以 Visual Studio Code 的「原始檔控制」功能為例。
@@ -82,30 +124,31 @@ http://127.0.0.1:3000/ 即時查看您寫的內容。
   可能會要求登入
   GitHub，請參考[這篇文章](https://medium.com/@newpage0720/vscode%E8%88%87github%E6%96%B0%E5%B0%88%E6%A1%88%E8%A8%AD%E5%AE%9A-4a2b5621a657)
 </Callout>
+
 1. 請先 Commit，請輸入您大致上更動了什麼於「訊息」欄位。 2. 點擊「提交」按鈕。 ![commit](/docs/commit.png)
 
-3. 點擊「同步變更」按鈕。
+2. 點擊「同步變更」按鈕。
    ![push](/docs/push.png)
 
-4. 這樣就上來了。
+3. 這樣就上來了。
    ![pushed](/docs/pushed.png)
 
-5. 還沒完，要去開 Pull requests。
+4. 還沒完，要去開 Pull requests。
    ![Open Pull requests](/docs/open_pull_requests.png)
 
-6. 點擊「New pull request」。
+5. 點擊「New pull request」。
    ![New pull request](/docs/new_pull_request.png)
 
-7. 點擊「Create pull request」。
+6. 點擊「Create pull request」。
    ![Create pull request](/docs/create_pull_request.png)
 
-8. 點擊「Create pull request」。
+7. 點擊「Create pull request」。
    ![Create pull request](/docs/create_pull_request2.png)
 
-9. 出現這個就代表開成功啦，機器人也檢查通過了。
+8. 出現這個就代表開成功啦，機器人也檢查通過了。
    ![Created pull request](/docs/created_pull_request.png)
 
-10. 耐心等待我們審核您的文章。
+9. 耐心等待我們審核您的文章。
 
 ---
 
